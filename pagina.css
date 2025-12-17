@@ -33,7 +33,7 @@ body {
     width: 100%;
 }
 
-/* Menú lateral (IZQUIERDA) */
+/* Menú lateral */
 .sidebar {
     width: 220px;
     min-width: 220px;
@@ -54,7 +54,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     font-size: 16px;
-    transition: 0.2s; 
+    transition: 0.2s; /* Solo hover botón */
     border: 2px solid #00C8FF;
 }
 
@@ -64,28 +64,57 @@ body {
     transform: scale(1.04);
 }
 
-/* Área de contenido (DERECHA) */
+/* Área de contenido */
 .content {
     flex: 1;
-    padding: 20px;
-    font-size: 22px;
+    padding: 40px; /* Un poco más de espacio para leer mejor */
+    font-size: 20px; /* Ajustado ligeramente para texto largo */
     color: #00C8FF;
-    background: rgba(0, 0, 0, 0.4); /* Fondo semitransparente sin desenfoque */
+    background: rgba(0, 0, 0, 0.4);
     overflow-y: auto;
 }
 
-/* --- LÓGICA DE PESTAÑAS --- */
-
+/* Lógica de pestañas */
 .seccion {
-    display: none; /* Oculto por defecto */
+    display: none;
 }
-
-/* Al hacer clic (target), se muestra de golpe (sin animación) */
 .seccion:target {
     display: block;
 }
 
-/* --- ESTILOS DEL FORMULARIO --- */
+/* --- ESTILOS ASESE (NUEVO) --- */
+.asese-info {
+    max-width: 800px;
+    margin: 0 auto; /* Centrar el bloque de texto */
+    line-height: 1.6; /* Espaciado entre líneas para leer mejor */
+    text-align: justify; /* Texto justificado elegante */
+    color: #e0f7ff; /* Blanco azulado para mejor lectura */
+}
+
+.asese-info p {
+    margin-bottom: 20px;
+}
+
+.asese-logos {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra las imágenes */
+    gap: 20px; /* Espacio entre el logo grande y el pequeño */
+}
+
+.logo-main {
+    max-width: 300px; /* Tamaño máximo del logo grande */
+    height: auto;
+}
+
+.logo-small {
+    max-width: 100px; /* Tamaño máximo de la imagen pequeña */
+    height: auto;
+    opacity: 0.8; /* Un poco transparente para estilo (opcional) */
+}
+
+/* --- FORMULARIO --- */
 .contact-form-container {
     max-width: 500px;
     margin: 0 auto;
@@ -97,6 +126,7 @@ body {
     text-align: center;
     margin-bottom: 25px;
     text-transform: uppercase;
+    color: #00C8FF;
 }
 
 .form-group {
@@ -141,3 +171,26 @@ body {
 .btn-enviar:hover {
     background-color: #33d4ff; 
 }
+
+/* --- ESTILO DE LA CAJA DE TEXTO (IGUAL QUE LOS BOTONES) --- */
+.asese-info {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    /* ESTILOS ROBADOS DEL BOTÓN (.menu-item) */
+    background-color: #0A0F2D;  /* El mismo fondo oscuro */
+    border: 2px solid #00C8FF;  /* El mismo borde neón */
+    border-radius: 6px;         /* Las mismas esquinas redondeadas */
+    
+    /* Ajustes para que el texto se vea bien dentro */
+    padding: 30px;              /* Espacio interior */
+    color: #e0f7ff;             /* Texto casi blanco para lectura cómoda */
+    text-align: justify;        /* Texto justificado */
+    line-height: 1.6;           /* Separación entre líneas */
+}
+
+.asese-info p {
+    margin-bottom: 20px;        /* Separación entre párrafos */
+    margin-top: 0;
+}
+

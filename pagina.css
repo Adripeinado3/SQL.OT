@@ -6,8 +6,7 @@ body {
     background-color: #050a1f;
 }
 
-/* Barra superior */
-.topbar {
+.barraArriba {
     background-color: #2A1A72;
     color: #FFFFFF;
     display: flex;
@@ -20,21 +19,20 @@ body {
     height: 40px;
 }
 
-.topbar img {
+.barraArriba img {
     height: 50px;
     width: auto;
     margin-right: 15px;
 }
 
-/* Contenedor principal */
-.container {
+.contenedor {
     display: flex;
     height: calc(100vh - 85px);
     width: 100%;
 }
 
-/* Menú lateral */
-.sidebar {
+
+.barralateral {
     width: 220px;
     min-width: 220px;
     background-color: #2A1A72;
@@ -45,7 +43,7 @@ body {
     border-right: 3px solid #00C8FF;
 }
 
-.menu-item {
+.menuizquierda {
     background-color: #0A0F2D;
     color: #39F3FF;
     padding: 15px;
@@ -54,27 +52,25 @@ body {
     cursor: pointer;
     text-decoration: none;
     font-size: 16px;
-    transition: 0.2s; /* Solo hover botón */
+    transition: 0.2s;
     border: 2px solid #00C8FF;
 }
 
-.menu-item:hover {
+.menuizquierda:hover {
     background-color: #00C8FF;
     color: #0A0F2D;
     transform: scale(1.04);
 }
 
-/* Área de contenido */
-.content {
+.contenido {
     flex: 1;
-    padding: 40px; /* Un poco más de espacio para leer mejor */
-    font-size: 20px; /* Ajustado ligeramente para texto largo */
+    padding: 40px; 
+    font-size: 20px; 
     color: #00C8FF;
     background: rgba(0, 0, 0, 0.4);
     overflow-y: auto;
 }
 
-/* Lógica de pestañas */
 .seccion {
     display: none;
 }
@@ -82,58 +78,64 @@ body {
     display: block;
 }
 
-/* --- ESTILOS ASESE (NUEVO) --- */
-.asese-info {
+.cuadroinfo {
     max-width: 800px;
-    margin: 0 auto; /* Centrar el bloque de texto */
-    line-height: 1.6; /* Espaciado entre líneas para leer mejor */
-    text-align: justify; /* Texto justificado elegante */
-    color: #e0f7ff; /* Blanco azulado para mejor lectura */
+    margin: 0 auto;
+    background-color: #0A0F2D; 
+    border: 2px solid #00C8FF; 
+    border-radius: 6px;       
+    padding: 30px;             
+    color: #e0f7ff;            
+    text-align: justify;       
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: justify; 
+    color: #e0f7ff;   
 }
 
-.asese-info p {
-    margin-bottom: 20px;
+.cuadroinfo p {
+    margin-bottom: 20px;       
+    margin-top: 0;
 }
 
-.asese-logos {
+.logosinfo {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra las imágenes */
-    gap: 20px; /* Espacio entre el logo grande y el pequeño */
+    align-items: center; 
+    gap: 20px; 
 }
 
-.logo-main {
-    max-width: 300px; /* Tamaño máximo del logo grande */
+.logogrande {
+    max-width: 300px;
     height: auto;
 }
 
-.logo-small {
-    max-width: 100px; /* Tamaño máximo de la imagen pequeña */
+.logochico {
+    max-width: 100px;
     height: auto;
-    opacity: 0.8; /* Un poco transparente para estilo (opcional) */
 }
 
 /* --- FORMULARIO --- */
-.contact-form-container {
+.formulario {
     max-width: 500px;
     margin: 0 auto;
     text-align: left;
     padding-top: 10px;
 }
 
-.contact-form-container h2 {
+.formulario h2 {
     text-align: center;
     margin-bottom: 25px;
     text-transform: uppercase;
     color: #00C8FF;
 }
 
-.form-group {
+.formularioTextos {
     margin-bottom: 20px;
 }
 
-.form-group label {
+.formularioTextos label {
     display: block;
     color: #39F3FF;
     margin-bottom: 8px;
@@ -141,8 +143,8 @@ body {
     font-weight: bold;
 }
 
-.form-group input, 
-.form-group textarea {
+.formularioTextos input, 
+.formularioTextos textarea {
     width: 100%;
     padding: 12px;
     background-color: #0A0F2D;
@@ -154,7 +156,7 @@ body {
     font-size: 16px;
 }
 
-.btn-enviar {
+.botonEnvio {
     width: 100%;
     padding: 15px;
     background-color: #00C8FF;
@@ -168,29 +170,8 @@ body {
     text-transform: uppercase;
 }
 
-.btn-enviar:hover {
+.botonEnvio:hover {
     background-color: #33d4ff; 
 }
 
-/* --- ESTILO DE LA CAJA DE TEXTO (IGUAL QUE LOS BOTONES) --- */
-.asese-info {
-    max-width: 800px;
-    margin: 0 auto;
-    
-    /* ESTILOS ROBADOS DEL BOTÓN (.menu-item) */
-    background-color: #0A0F2D;  /* El mismo fondo oscuro */
-    border: 2px solid #00C8FF;  /* El mismo borde neón */
-    border-radius: 6px;         /* Las mismas esquinas redondeadas */
-    
-    /* Ajustes para que el texto se vea bien dentro */
-    padding: 30px;              /* Espacio interior */
-    color: #e0f7ff;             /* Texto casi blanco para lectura cómoda */
-    text-align: justify;        /* Texto justificado */
-    line-height: 1.6;           /* Separación entre líneas */
-}
-
-.asese-info p {
-    margin-bottom: 20px;        /* Separación entre párrafos */
-    margin-top: 0;
-}
 

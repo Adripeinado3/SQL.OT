@@ -87,10 +87,10 @@ body {
     padding: 30px;             
     color: #e0f7ff;            
     text-align: justify;       
-    max-width: 800px;
     margin: 0 auto; 
-    text-align: justify; 
-    color: #e0f7ff;   
+    height: auto;         
+    height: fit-content; 
+    align-self: flex-start; 
 }
 
 .cuadroinfo p {
@@ -195,4 +195,11 @@ body {
     transform: scale(1.04);
 }
 
-
+.fotosmanual {
+    max-width: 100%;       
+    height: auto;          
+    display: block;     
+    margin: 20px auto;    
+    border-radius: 4px;    
+    box-shadow: 0 0 5px rgba(0, 200, 255, 0.3); 
+}

@@ -116,7 +116,7 @@ body {
     height: auto;
 }
 
-/* --- FORMULARIO --- */
+
 .formulario {
     max-width: 500px;
     margin: 0 auto;
@@ -172,6 +172,27 @@ body {
 
 .botonEnvio:hover {
     background-color: #33d4ff; 
+}
+
+.boton-volver {
+    display: inline-block;
+    background-color: #0A0F2D;
+    color: #39F3FF;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid #00C8FF;
+    transition: 0.2s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.boton-volver:hover {
+    background-color: #00C8FF;
+    color: #0A0F2D;
+    transform: scale(1.04);
 }
 
 

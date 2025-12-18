@@ -17,12 +17,13 @@ body {
     font-weight: bold;
     border-bottom: 3px solid #00C8FF;
     height: 40px;
+  
 }
 
 .barraArriba img {
     height: 50px;
     width: auto;
-    margin-right: 15px;
+    margin-right: 50%;
 }
 
 .contenedor {
@@ -202,4 +203,20 @@ body {
     margin: 20px auto;    
     border-radius: 4px;    
     box-shadow: 0 0 5px rgba(0, 200, 255, 0.3); 
+}
+
+.boton-idioma {
+    margin-left: auto;    
+    color: #FFFFFF;         
+    text-decoration: none; 
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 10px;    
+    cursor: pointer;
+}
+
+
+.boton-idioma:visited, 
+.boton-idioma:active {
+    color: #FFFFFF; 
 }
